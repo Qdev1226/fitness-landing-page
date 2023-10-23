@@ -1,0 +1,250 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* All Global objects*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.submitButton{
+  height: 38px;
+  background: #929690;
+  border:0;
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.submitButton:hover{
+  background-color: #C5D4CE;
+  color: #393330;
+}
+
+.dark{
+  padding: 15px;
+  background: #393330;
+  border: 0;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+/* Header */
+header{
+  background: #393330;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #929690 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #brand{
+  float: left;
+}
+
+header #brand h1{
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #A2B2AE;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #C5D4CE;
+  font-weight: bold;
+}
+
+/* Banner */
+#intro{
+  min-height: 400px;
+  background: url('../img/banner.jpg') no-repeat 0 -40px;
+  background-size: cover;
+  background-color: #393330;
+  text-align: center;
+  color: #ffffff;
+}
+
+#intro h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#intro p{
+  font-size: 20px;
+}
+
+/* Quick Sign Up */
+#emailsignup{
+  padding: 15px;
+  color: #ffffff;
+  background: #393330;
+}
+
+#emailsignup h1{
+  float: left;
+}
+
+#emailsignup form{
+  float: right;
+  margin-top: 15px;
+}
+
+#emailsignup input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border-radius: 2px;
+}
+
+/* Features */
+#features{
+  margin-top: 20px;
+}
+
+#features .feature{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/* About Article */
+article#main-column{
+  float: left;
+  width: 65%;
+}
+
+/* Popup */
+.popup-background{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popup-content{
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.popup-content input{
+  padding: 4px;
+  margin: 15px auto;
+  height: 25px;
+  width: 75%;
+  display: block;
+  background-color: #f4f4f4;
+  border-radius: 2px;
+  border: 0px;
+}
+
+.close-button{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 38px;
+  transform: rotate(45deg);
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+/* Footer */
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background: #929690;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #brand,
+  header nav,
+  header nav li,
+  #emailsignup h1,
+  #emailsignup form,
+  #features .feature,
+  article#main-column,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #intro h1{
+    margin-top: 40px;
+  }
+
+  #emailsignup button{
+    display: block;
+    width: 100%;
+  }
+
+  #emailsignup form input[type='email']{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+}
